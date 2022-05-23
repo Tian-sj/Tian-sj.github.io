@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://tian_sj.gitee.io/tian-sj.github.io/img/favicon.png">
+  <link rel="icon" href="https://tian_sj.gitee.io/tian-sj.github.io/img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -16,22 +16,22 @@
   <meta name="author" content="Tian_sj">
   <meta name="keywords" content="">
   
-    <meta name="description" content="之前安装mysql不是中文乱码，就是一段时间之后用不了，需要重新卸载、安装，太麻烦了，下面的方法直接解决乱码等，话不多说，直接开干  官网下载MySQL 最新版本下载      其他版本请点击Looking for previous GA versions?     64位选择红色，32位选择绿色       下载完成后解压 解压之后的样子     配置my.ini文件 解压之后的目录中没有my">
+    <meta name="description" content="之前安装mysql不是中文乱码，就是一段时间之后用不了，需要重新卸载、安装，太麻烦了，下面的方法直接解决乱码等，话不多说，直接开干  官网下载MySQL 最新版本下载   其他版本请点击Looking for previous GA versions?  64位选择红色，32位选择绿色          下载完成后解压 解压之后的样子    配置my.ini文件 解压之后的目录中没有my.ini">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL安装方法，支持所有版本">
 <meta property="og:url" content="https://tian-sj.github.io/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/index.html">
 <meta property="og:site_name" content="Tian_sj">
-<meta property="og:description" content="之前安装mysql不是中文乱码，就是一段时间之后用不了，需要重新卸载、安装，太麻烦了，下面的方法直接解决乱码等，话不多说，直接开干  官网下载MySQL 最新版本下载      其他版本请点击Looking for previous GA versions?     64位选择红色，32位选择绿色       下载完成后解压 解压之后的样子     配置my.ini文件 解压之后的目录中没有my">
+<meta property="og:description" content="之前安装mysql不是中文乱码，就是一段时间之后用不了，需要重新卸载、安装，太麻烦了，下面的方法直接解决乱码等，话不多说，直接开干  官网下载MySQL 最新版本下载   其他版本请点击Looking for previous GA versions?  64位选择红色，32位选择绿色          下载完成后解压 解压之后的样子    配置my.ini文件 解压之后的目录中没有my.ini">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tian_sj.gitee.io/tian-sj.github.io/img/banner-01.jpg">
+<meta property="og:image" content="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/banner-01.jpg">
 <meta property="article:published_time" content="2022-05-10T04:46:58.000Z">
-<meta property="article:modified_time" content="2022-05-23T11:38:04.492Z">
+<meta property="article:modified_time" content="2022-05-23T12:06:45.476Z">
 <meta property="article:author" content="Tian_sj">
 <meta property="article:tag" content="原创">
 <meta property="article:tag" content="安装">
 <meta property="article:tag" content="部署">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://tian_sj.gitee.io/tian-sj.github.io/img/banner-01.jpg">
+<meta name="twitter:image" content="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/banner-01.jpg">
   
   
   
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"tian-sj.github.io","root":"/","version":"1.9.0","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"ULP5ozDoaB1m5pwPA7sPhGDY-gzGzoHsz","app_key":"kOyc6UgOVWGVAfCPFgAhNThp","server_url":"https://ulp5ozdo.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"tian-sj.github.io","root":"/","version":"1.9.0","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"ULP5ozDoaB1m5pwPA7sPhGDY-gzGzoHsz","app_key":"kOyc6UgOVWGVAfCPFgAhNThp","server_url":"https://ulp5ozdo.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -204,7 +204,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://tian_sj.gitee.io/tian-sj.github.io/img/banner-01.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/banner-01.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -306,57 +306,51 @@
 <p>之前安装mysql不是中文乱码，就是一段时间之后用不了，需要重新卸载、安装，太麻烦了，下面的方法直接解决乱码等，话不多说，直接开干</p>
 </blockquote>
 <h2 id="官网下载MySQL"><a href="#官网下载MySQL" class="headerlink" title="官网下载MySQL"></a><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">官网下载</a>MySQL</h2><ul>
-<li><h3 id="最新版本下载"><a href="#最新版本下载" class="headerlink" title="最新版本下载"></a>最新版本下载</h3><img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/1.png" srcset="/img/loading.gif" lazyload class="">
-
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/4.png" srcset="/img/loading.gif" lazyload class="">
-
-
+<li><h3 id="最新版本下载"><a href="#最新版本下载" class="headerlink" title="最新版本下载"></a>最新版本下载</h3><p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/1.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/4.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
-<li><h3 id="其他版本请点击Looking-for-previous-GA-versions"><a href="#其他版本请点击Looking-for-previous-GA-versions" class="headerlink" title="其他版本请点击Looking for previous GA versions?"></a>其他版本请点击Looking for previous GA versions?</h3><img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/2.png" srcset="/img/loading.gif" lazyload class="">
-
-
-
+<li><h3 id="其他版本请点击Looking-for-previous-GA-versions"><a href="#其他版本请点击Looking-for-previous-GA-versions" class="headerlink" title="其他版本请点击Looking for previous GA versions?"></a>其他版本请点击Looking for previous GA versions?</h3><p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/2.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload alt=""></p>
 <ul>
 <li>64位选择红色，32位选择绿色</li>
 </ul>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/3.png" srcset="/img/loading.gif" lazyload class="">
-
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/4.png" srcset="/img/loading.gif" lazyload class=""></li>
+</li>
 </ul>
+<p> <img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/3.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
+<p>  <img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/4.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 <hr>
 <h2 id="下载完成后解压"><a href="#下载完成后解压" class="headerlink" title="下载完成后解压"></a>下载完成后解压</h2><ul>
 <li>解压之后的样子</li>
 </ul>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/5.png" srcset="/img/loading.gif" lazyload class="">
-
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/5.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 <hr>
 <h2 id="配置my-ini文件"><a href="#配置my-ini文件" class="headerlink" title="配置my.ini文件"></a>配置my.ini文件</h2><ul>
 <li><p>解压之后的目录中没有my.ini，需要自己建，写入以下配置</p>
 <p>注意<font color="red"><code>basedir</code></font>和<font color="red"><code>datadir</code></font>中写自己MySQL的存放路径,不用自己建立Data文件夹</p>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[mysqld]</span><br><span class="hljs-comment"># 设置3306端口</span><br><span class="hljs-attr">port</span>=<span class="hljs-number">3306</span><br><span class="hljs-comment"># 设置mysql的安装目录</span><br><span class="hljs-attr">basedir</span>=E:\mysql-<span class="hljs-number">5.7</span>.<span class="hljs-number">38</span>-winx64<br><span class="hljs-comment"># 设置mysql数据库的数据的存放目录</span><br><span class="hljs-attr">datadir</span>=E:\mysql-<span class="hljs-number">5.7</span>.<span class="hljs-number">38</span>-winx64\Data<br><span class="hljs-comment"># 允许最大连接数</span><br><span class="hljs-attr">max_connections</span>=<span class="hljs-number">200</span><br><span class="hljs-comment"># 允许连接失败的次数。</span><br><span class="hljs-attr">max_connect_errors</span>=<span class="hljs-number">10</span><br><span class="hljs-comment"># 服务端使用的字符集默认为utf8mb4</span><br><span class="hljs-attr">character-set-server</span>=utf8mb4<br><span class="hljs-comment"># 创建新表时将使用的默认存储引擎</span><br><span class="hljs-attr">default-storage-engine</span>=INNODB<br><span class="hljs-comment"># 默认使用“mysql_native_password”插件认证</span><br><span class="hljs-comment">#mysql_native_password</span><br><span class="hljs-attr">default_authentication_plugin</span>=mysql_native_password<br><span class="hljs-section">[mysql]</span><br><span class="hljs-comment"># 设置mysql客户端默认字符集</span><br><span class="hljs-attr">default-character-set</span>=utf8mb4<br><span class="hljs-section">[client]</span><br><span class="hljs-comment"># 设置mysql客户端连接服务端时默认使用的端口</span><br><span class="hljs-attr">port</span>=<span class="hljs-number">3306</span><br><span class="hljs-attr">default-character-set</span>=utf8mb4<br></code></pre></td></tr></table></figure>
 
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/6.png" srcset="/img/loading.gif" lazyload class=""></li>
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/6.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
+</li>
 </ul>
 <hr>
 <h2 id="添加系统环境变量"><a href="#添加系统环境变量" class="headerlink" title="添加系统环境变量"></a>添加系统环境变量</h2><ul>
 <li><p>右键此电脑，点击属性</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/8.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/8.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>翻到下面点击高级系统设置</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/14.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/14.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>点击环境变量</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/15.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/15.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>双击系统变量下的Path</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/16.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/16.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>弹出框中点击新建</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/17.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/17.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>输入自己MySQL存放目录下的bin目录</p>
 <p><font color="red">注意!</font>一定输入自己MySQL下bin的存放目录</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/18.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/18.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>最后点击确定即可</p>
 </li>
@@ -364,13 +358,12 @@
 <hr>
 <h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><ul>
 <li><p>为了避免权限问题，请以管理员运行CMD</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/7.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/7.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>执行以下命令:</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">mysqld <span class="hljs-literal">--initialize</span> <span class="hljs-literal">--console</span><br></code></pre></td></tr></table></figure>
 
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/9.png" srcset="/img/loading.gif" lazyload class="">
-
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/9.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 <blockquote>
 <p><font color="red">注意！</font>Pbm7&amp;PibYBEZ是服务器为root@localhost生成的临时密码</p>
 <p>每个人生成的临时密码都不相同(不要复制粘贴我生成的密码)，密码没有空格，其他符号都有可能出现</p>
@@ -384,36 +377,33 @@
 <li><h3 id="安装MySQL服务"><a href="#安装MySQL服务" class="headerlink" title="安装MySQL服务"></a>安装MySQL服务</h3><p>执行以下命令</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">mysqld <span class="hljs-attr">--install</span> <span class="hljs-selector-attr">[服务名]</span><br></code></pre></td></tr></table></figure>
 
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/10.png" srcset="/img/loading.gif" lazyload class="">
-
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/10.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 <p>这样代表成功了！</p>
 <blockquote>
 <p>如果出现下面这个</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/11.png" srcset="/img/loading.gif" lazyload class="">
-
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/11.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 <p>代表你之前安装的MySQL的服务没有删除</p>
 <p>以管理员运行CMD，输入以下命令</p>
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">sc <span class="hljs-keyword">delete</span> mysql<br></code></pre></td></tr></table></figure>
 
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/12.png" srcset="/img/loading.gif" lazyload class="">
-
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/12.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 <p>删除成功!</p>
 </blockquote>
 </li>
 <li><h3 id="启动MySQL服务"><a href="#启动MySQL服务" class="headerlink" title="启动MySQL服务"></a>启动MySQL服务</h3><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dos"><span class="hljs-built_in">net</span> <span class="hljs-built_in">start</span> mysql<br></code></pre></td></tr></table></figure>
 
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/13.png" srcset="/img/loading.gif" lazyload class=""></li>
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/13.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
+</li>
 </ul>
 <hr>
 <h2 id="修改登录密码"><a href="#修改登录密码" class="headerlink" title="修改登录密码"></a>修改登录密码</h2><ul>
 <li><p>输入以下命令</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">mysql <span class="hljs-literal">-u</span> root <span class="hljs-literal">-p</span><br></code></pre></td></tr></table></figure>
 
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/19.png" srcset="/img/loading.gif" lazyload class="">
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/19.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 </li>
 <li><p>输入服务器生成的临时密码回车</p>
-<img src="/2022/05/10/MySQL%E6%9C%80%E5%BC%BA%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/20.png" srcset="/img/loading.gif" lazyload class="">
-
+<p><img src="https://tian_sj.gitee.io/tian-sj.github.io/post/MySQL%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC/20.png" srcset="https://tian_sj.gitee.io/tian-sj.github.io/img/loading.gif" lazyload></p>
 <p>出现这个页面代表成功进入mysql</p>
 </li>
 <li><p>输入以下命令修改密码</p>
