@@ -16,26 +16,26 @@
   <meta name="author" content="Tian_sj">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Qplain TextEdit的文字内容以QTextDocument类型存储，函数document返回这个文档对象的指针。 QTextDocument是内存中的文本对象，以文本块的方式存储，每个段落以换行符结束 QTextDocument提供一些函数实现对文本内容的存取 int blockCount(), 返回文本块个数 QTextBlock finBlockByNumber(int ), 读取">
+    <meta name="description" content="Constant Value Description    Qt::NoItemFlags 0 它没有设置任何属性。   Qt::ItemIsSelectable 1 它可以被选中。   Qt::ItemIsEditable 2 它可以被编辑。   Qt::ItemIsDragEnabled 4 它可以被拖动。   Qt::ItemIsDropEnabled 8 它可以用作放置目标。   Q">
 <meta property="og:type" content="article">
-<meta property="og:title" content="QComBox和QPlainTextEdit">
-<meta property="og:url" content="https://tian-sj.github.io/2022/05/14/QComBox%E5%92%8CQPlainTextEdit/index.html">
+<meta property="og:title" content="Qt6 ItemFlags">
+<meta property="og:url" content="https://tian-sj.github.io/2022/05/25/Qt6-ItemFlags/index.html">
 <meta property="og:site_name" content="Tian_sj">
-<meta property="og:description" content="Qplain TextEdit的文字内容以QTextDocument类型存储，函数document返回这个文档对象的指针。 QTextDocument是内存中的文本对象，以文本块的方式存储，每个段落以换行符结束 QTextDocument提供一些函数实现对文本内容的存取 int blockCount(), 返回文本块个数 QTextBlock finBlockByNumber(int ), 读取">
+<meta property="og:description" content="Constant Value Description    Qt::NoItemFlags 0 它没有设置任何属性。   Qt::ItemIsSelectable 1 它可以被选中。   Qt::ItemIsEditable 2 它可以被编辑。   Qt::ItemIsDragEnabled 4 它可以被拖动。   Qt::ItemIsDropEnabled 8 它可以用作放置目标。   Q">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tian_sj.gitee.io/tian-sj.github.io/post/QComBox%E5%92%8CQPlainTextEdit/banner-05.jpg">
-<meta property="article:published_time" content="2022-05-14T05:13:40.000Z">
-<meta property="article:modified_time" content="2022-05-23T12:07:41.086Z">
+<meta property="og:image" content="https://tian_sj.gitee.io/tian-sj.github.io/post/Qt6-ItemFlags/banner.jpg">
+<meta property="article:published_time" content="2022-05-25T08:28:49.000Z">
+<meta property="article:modified_time" content="2022-05-25T08:44:40.849Z">
 <meta property="article:author" content="Tian_sj">
 <meta property="article:tag" content="原创">
 <meta property="article:tag" content="C++">
 <meta property="article:tag" content="Qt">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://tian_sj.gitee.io/tian-sj.github.io/post/QComBox%E5%92%8CQPlainTextEdit/banner-05.jpg">
+<meta name="twitter:image" content="https://tian_sj.gitee.io/tian-sj.github.io/post/Qt6-ItemFlags/banner.jpg">
   
   
   
-  <title>QComBox和QPlainTextEdit - Tian_sj</title>
+  <title>Qt6 ItemFlags - Tian_sj</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -204,13 +204,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://tian_sj.gitee.io/tian-sj.github.io/post/QComBox%E5%92%8CQPlainTextEdit/banner-05.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://tian_sj.gitee.io/tian-sj.github.io/post/Qt6-ItemFlags/banner.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="QComBox和QPlainTextEdit"></span>
+            <span id="subtitle" data-typed-text="Qt6 ItemFlags"></span>
           
         </div>
 
@@ -221,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-05-14 13:13" pubdate>
-          2022年5月14日 下午
+        <time datetime="2022-05-25 16:28" pubdate>
+          2022年5月25日 下午
         </time>
       </span>
     
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          201 字
+          460 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          2 分钟
+          4 分钟
         
       </span>
     
@@ -290,27 +290,77 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">QComBox和QPlainTextEdit</h1>
+            <h1 style="display: none">Qt6 ItemFlags</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2022年5月23日 晚上
+                    本文最后更新于：2022年5月25日 下午
                   
                 
               </p>
             
             <div class="markdown-body">
               
-              <ul>
-<li><h3 id="Qplain-TextEdit的文字内容以QTextDocument类型存储，函数document返回这个文档对象的指针。"><a href="#Qplain-TextEdit的文字内容以QTextDocument类型存储，函数document返回这个文档对象的指针。" class="headerlink" title="Qplain TextEdit的文字内容以QTextDocument类型存储，函数document返回这个文档对象的指针。"></a>Qplain TextEdit的文字内容以QTextDocument类型存储，函数document返回这个文档对象的指针。</h3></li>
-<li><h3 id="QTextDocument是内存中的文本对象，以文本块的方式存储，每个段落以换行符结束"><a href="#QTextDocument是内存中的文本对象，以文本块的方式存储，每个段落以换行符结束" class="headerlink" title="QTextDocument是内存中的文本对象，以文本块的方式存储，每个段落以换行符结束"></a>QTextDocument是内存中的文本对象，以文本块的方式存储，每个段落以换行符结束</h3></li>
-<li><h3 id="QTextDocument提供一些函数实现对文本内容的存取"><a href="#QTextDocument提供一些函数实现对文本内容的存取" class="headerlink" title="QTextDocument提供一些函数实现对文本内容的存取"></a>QTextDocument提供一些函数实现对文本内容的存取</h3><ul>
-<li>int blockCount(), 返回文本块个数</li>
-<li>QTextBlock finBlockByNumber(int ), 读取一个文本块，序号从0开始</li>
-</ul>
-</li>
-</ul>
+              <table>
+<thead>
+<tr>
+<th align="left">Constant</th>
+<th align="left">Value</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Qt::NoItemFlags</code></td>
+<td align="left"><code>0</code></td>
+<td align="center">它没有设置任何属性。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsSelectable</code></td>
+<td align="left"><code>1</code></td>
+<td align="center">它可以被选中。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsEditable</code></td>
+<td align="left"><code>2</code></td>
+<td align="center">它可以被编辑。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsDragEnabled</code></td>
+<td align="left"><code>4</code></td>
+<td align="center">它可以被拖动。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsDropEnabled</code></td>
+<td align="left"><code>8</code></td>
+<td align="center">它可以用作放置目标。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsUserCheckable</code></td>
+<td align="left"><code>16</code></td>
+<td align="center">它可以由用户选中或取消选中。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsEnabled</code></td>
+<td align="left"><code>32</code></td>
+<td align="center">用户可以与项目交互。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsAutoTristate</code></td>
+<td align="left"><code>64</code></td>
+<td align="center">项目的状态取决于其子项的状态。这使得<a target="_blank" rel="noopener" href="https://doc.qt.io/qt-6/qtreewidget.html">QTreeWidget</a>中的父项的状态可以自动管理（如果所有的子项都被选中，则为选中；如果所有的子项都未被选中，则为未选中；如果只有一些子项被选中，则为部分选中）。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemNeverHasChildren</code></td>
+<td align="left"><code>128</code></td>
+<td align="center">该项目永远不会有子项目。这仅用于优化目的。</td>
+</tr>
+<tr>
+<td align="left"><code>Qt::ItemIsUserTristate</code></td>
+<td align="left"><code>256</code></td>
+<td align="center">用户可以循环通过三个不同的状态。这个值是在 Qt 5.5 中添加的。</td>
+</tr>
+</tbody></table>
 
               
             </div>
@@ -366,8 +416,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>QComBox和QPlainTextEdit</div>
-      <div>https://tian-sj.github.io/2022/05/14/QComBox和QPlainTextEdit/</div>
+      <div>Qt6 ItemFlags</div>
+      <div>https://tian-sj.github.io/2022/05/25/Qt6-ItemFlags/</div>
     </div>
     <div class="license-meta">
       
@@ -379,7 +429,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年5月14日</div>
+          <div>2022年5月25日</div>
         </div>
       
       
@@ -409,18 +459,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/05/25/Qt6-ItemFlags/" title="Qt6 ItemFlags">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Qt6 ItemFlags</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/05/12/Qt%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8E%E6%95%B0%E5%80%BC%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/" title="Qt中字符串与数值之间的转换">
-                        <span class="hidden-mobile">Qt中字符串与数值之间的转换</span>
+                      <a href="/2022/05/14/QComBox%E5%92%8CQPlainTextEdit/" title="QComBox和QPlainTextEdit">
+                        <span class="hidden-mobile">QComBox和QPlainTextEdit</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
